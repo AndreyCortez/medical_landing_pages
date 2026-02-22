@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definição do sistema de design.
+  Esquema de cores baseado na paleta:
+  - #DBC9C5 (hsl(15, 20%, 85%))
+  - #CCACA4 (hsl(15, 20%, 75%))
+  - #AB8C84 (hsl(15, 20%, 60%))
+*/
+
+@layer base {
+  :root {
+    /* Cores base do modo claro */
+    /* ATUALIZAÇÃO: Fundo alterado para um bege suave */
+    --background: 15 20% 97%;
+    --foreground: 15 20% 15%;
+
+    /* ATUALIZAÇÃO: Cor do card alterada para um tom mais escuro, próximo de #AB8C84 */
+    --card: 15 20% 88%;
+    --card-foreground: 15 20% 15%;
+
+    --popover: 15 20% 98%;
+    --popover-foreground: 15 20% 15%;
+
+    /* Cor primária (o tom mais escuro da paleta) */
+    --primary: 15 20% 60%;
+    --primary-foreground: 15 20% 98%;
+    --primary-glow: 15 25% 70%;
+
+    /* Cor secundária (o tom mais claro da paleta) */
+    --secondary: 15 20% 85%;
+    --secondary-foreground: 15 20% 15%;
+
+    --muted: 15 20% 92%;
+    --muted-foreground: 15 15% 45%;
+
+    /* Cor de destaque (o tom médio da paleta) */
+    --accent: 15 20% 75%;
+    --accent-foreground: 15 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 15 20% 88%;
+    --input: 15 20% 88%;
+    --ring: 15 20% 60%;
+
+    /* Gradientes usando a nova paleta */
+    --gradient-hero: linear-gradient(135deg, hsl(15 20% 60%), hsl(15 20% 75%));
+    --gradient-accent: linear-gradient(135deg, hsl(15 20% 85%), hsl(15 20% 70%));
+
+    /* Sombras sutis com a cor primária */
+    --shadow-card: 0 4px 20px -2px hsl(15 20% 60% / 0.1);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --radius: 0.5rem;
+
+    /* Cores da barra lateral para o modo claro */
+    --sidebar-background: 15 20% 96%;
+    --sidebar-foreground: 15 20% 20%;
+    --sidebar-primary: 15 20% 60%;
+    --sidebar-primary-foreground: 15 20% 98%;
+    --sidebar-accent: 15 20% 90%;
+    --sidebar-accent-foreground: 15 20% 15%;
+    --sidebar-border: 15 20% 85%;
+    --sidebar-ring: 15 20% 60%;
+  }
+
+  .dark {
+    /* Cores base do modo escuro */
+    --background: 15 10% 10%;
+    --foreground: 15 15% 95%;
+
+    --card: 15 10% 12%;
+    --card-foreground: 15 15% 95%;
+
+    --popover: 15 10% 8%;
+    --popover-foreground: 15 15% 95%;
+
+    /* Cor primária (o tom mais claro vira o principal no modo escuro) */
+    --primary: 15 20% 85%;
+    --primary-foreground: 15 20% 10%;
+
+    --secondary: 15 15% 20%;
+    --secondary-foreground: 15 15% 95%;
+
+    --muted: 15 15% 20%;
+    --muted-foreground: 15 10% 60%;
+
+    --accent: 15 15% 30%;
+    --accent-foreground: 15 15% 95%;
+
+    --destructive: 0 70% 40%;
+    --destructive-foreground: 15 15% 95%;
+
+    --border: 15 15% 20%;
+    --input: 15 15% 20%;
+    --ring: 15 20% 75%;
+
+    /* Cores da barra lateral para o modo escuro */
+    --sidebar-background: 15 10% 10%;
+    --sidebar-foreground: 15 15% 95%;
+    --sidebar-primary: 15 20% 85%;
+    --sidebar-primary-foreground: 15 10% 10%;
+    --sidebar-accent: 15 10% 15%;
+    --sidebar-accent-foreground: 15 15% 95%;
+    --sidebar-border: 15 10% 15%;
+    --sidebar-ring: 15 20% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

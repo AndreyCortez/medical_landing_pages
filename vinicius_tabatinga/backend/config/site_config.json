@@ -1,0 +1,17 @@
+{
+  "site_name": "Dr. Vinicius Tabatinga",
+  "site_title": "Dr. Vinicius Tabatinga | Oftalmologista",
+  "site_description": "Dr. Vinicius Tabatinga - Oftalmologista especialista em Catarata, Glaucoma e Cirurgia Refrativa. Agende sua consulta.",
+  "site_url": "https://viniciustabatinga.com.br",
+  "cta_label": "Agendar Consulta",
+  "contact": {
+    "whatsapp_number": "5511999999999",
+    "whatsapp_message": "Olá Dr. Vinicius, gostaria de agendar uma consulta.",
+    "email": "contato@viniciustabatinga.com.br",
+    "phone_display": "(11) 99999-9999",
+    "address": "Tabatinga, SP",
+    "hours": "Segunda a Sexta-feira: 8h às 18h",
+    "map_embed_url": "https://www.google.com/maps?q=Tabatinga,SP,Brazil&output=embed"
+  },
+  "google_analytics_id": ""
+}
